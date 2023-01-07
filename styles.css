@@ -128,6 +128,7 @@ header {
     text-transform: uppercase;
     box-shadow: 7px 7px var(--main-font-color);
     border: none;
+    margin-right: 15px;
 
   }
 
@@ -699,7 +700,8 @@ footer {
     pointer-events: none;
 
 }
-   
+
+
 .footer {
     display: flex;
     position: relative;
@@ -912,6 +914,12 @@ position: relative;
     .footer div {
         margin: 10px 0;
     }
+    .footerlayout::before {
+        width: 56%;
+        height: 100%;
+        left: 0vh;
+        top: -18%;
+    }
     #google-map {
         width: 480px;
     }
@@ -980,7 +988,8 @@ position: relative;
     #google-map {
         width: 320px;
     }
-
+   
+   
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
