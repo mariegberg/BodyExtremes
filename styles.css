@@ -409,10 +409,11 @@ body {
 .openinghours-box {
     background-color: #0D0D0D;
     width: 60%;
-    padding: 21px 0;
+    padding: 10px 0;
     border: 1px solid var(--main-font-color);
     box-shadow: 15px 15px var(--main-font-color); 
     position: relative;
+    font-size: 20px;
 }
 
 .font-bold {
@@ -619,13 +620,47 @@ body {
     right: 0;
 }
 
-/* .spike::before {
-    content: "";
-    width: 100%;
+.spike3 {
     background-image: url(/images/spike.svg);
-    background-size: 100% auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: -14vw;
+    top: 75vh;
+}
+
+/* POSSIBLE SPINNING ICON */
+
+/* .spinning-logo-pos {
     position: relative;
-} */
+    right: -122vh;
+    bottom: -18vh;
+    z-index: 3;
+}
+
+#spinning-logo {
+    width: 100px;
+    height: 100px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+/* }
+      
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+} */ */
 
 
 /* PIERCING CARDS STYLING */
@@ -835,6 +870,16 @@ position: relative;
     /* Unicode character for "minus" sign (-) */
 }
 
+/* KIDS PIERCING PAGE CUSTOM STYLING */
+
+#kids-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 15vw;
+    
+}
+
 /* MEDIA QUERIES */
 
 /* Desktop */
@@ -901,7 +946,6 @@ position: relative;
         width: 80%;
         box-shadow: 7px 7px var(--main-font-color);
     }
-
     .footerlayout {
         margin-top: 50px;
     }
