@@ -39,6 +39,13 @@ body::before {
     pointer-events: none;
 }
 
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
 h2 {
     font-size: 48px;
     text-transform: uppercase;
@@ -58,6 +65,9 @@ h3 {
     margin-bottom: 2vh;
 }
 
+section {
+    overflow: hidden;
+}
 
 
 /* NAVBAR STYLING */ 
@@ -337,6 +347,11 @@ body {
     background-color: var(--dark-accent-color);
     color: var(--main-font-color);
     border: 1px solid var(--main-font-color);
+    margin-top: 30px;
+    text-align: center;
+    transform: translate(50%, 50%);
+    position: absolute;
+    bottom: 100px;
 }
 
 .collection-button:hover {
@@ -345,7 +360,22 @@ body {
     border: 1px solid var(--background-color);
     box-shadow: none;
     transform: translateY(4px);
-  }
+}
+
+.collection-button2 {
+    background-color: var(--dark-accent-color);
+    color: var(--main-font-color);
+    border: 1px solid var(--main-font-color);
+    text-align: center;
+}
+
+.collection-button2:hover {
+    background-color: var(--main-font-color);
+    color: var(--background-color);
+    border: 1px solid var(--background-color);
+    box-shadow: none;
+    transform: translateY(4px);
+}
 
 /* PIERCING NAVIGATION BLOCK */
 
@@ -559,7 +589,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10vh 0 25vh 0;
+    margin: 10vh 0 10vh 0;
 }
 
 .hero-img { 
@@ -608,6 +638,7 @@ body {
     opacity: 50%;
     right: 0;
     pointer-events: none;
+    overflow: hidden;
 }
 
 .spike2 {
@@ -620,7 +651,7 @@ body {
     right: 0;
 }
 
-.spike3 {
+/* .spike3 {
     background-image: url(/images/spike.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -629,7 +660,8 @@ body {
     height: 100%;
     right: -14vw;
     top: 75vh;
-}
+    overflow: hidden;
+} */
 
 /* POSSIBLE SPINNING ICON */
 
@@ -660,12 +692,19 @@ body {
     to {
         transform:rotate(360deg);
     }
-} */ */
+} */ 
 
 
 /* PIERCING CARDS STYLING */
 
 .piercing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 30px;
+    position: relative;
+}
+
+#trial {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 30px;
@@ -690,10 +729,16 @@ body {
     border-bottom: 1px solid var(--main-font-color);
 }
 
+#img-size {
+    width: 300px;
+    height: auto;
+}
+
 .piercing-card-content {
-    height: 60%;
+    height: 600px;
     padding: 0 20px;
     position: relative;
+    
 }
 
 .piercing-card-content button {
@@ -902,7 +947,7 @@ position: relative;
 }
 
 @media screen and (max-width: 1363px) {
-    .piercing-container {
+    #trial{
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -1003,7 +1048,7 @@ position: relative;
 }   
 
 @media screen and (max-width: 908px) {
-    .piercing-container {
+    #trial {
         grid-template-columns: repeat(1, 1fr);
         box-shadow: none;
     }
