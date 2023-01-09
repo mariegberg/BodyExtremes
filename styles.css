@@ -190,8 +190,6 @@ header {
   
 /* Show the dropdown menu on hover */
 
-.dropdown-content a:hover {background-color: #ddd;}
-
 .dropdown:hover .dropdown-content {display: block;}
 
 
@@ -741,6 +739,13 @@ body {
     
 }
 
+.people-card-content {
+    height: 600px;
+    padding: 0 20px;
+    position: relative;
+    line-height: 2;
+}
+
 .piercing-card-content button {
     position: absolute;
     bottom: 10%;
@@ -881,6 +886,9 @@ position: relative;
     margin: auto;
     background-color: var(--dark-accent-color);
     border: 1px solid var(--main-font-color);
+    font-size: 25px;
+    text-align: start;
+    
 }
 .faq-body{
     margin: auto;
@@ -1002,6 +1010,9 @@ position: relative;
     }
     .footer div {
         margin: 10px 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     .footerlayout::before {
         width: 56%;

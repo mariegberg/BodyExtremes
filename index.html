@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <title>Copenhagen Body Extremes</title>
 </head>
 <body>
@@ -108,11 +109,12 @@
        <div class="about-us-main">
             <h2>Om os</h2>
             <div class="about-us-text">
-                <p class="body-text">Tanken bag var, og er til den dag i dag, at være de bedste til vores håndværk, sætte den højeste standard indenfor industrien og yde den bedste kundeservice. 
+                <p class="body-text">Vi er et team af fagfolk, der er interesseret i alle former for kropsmodifikationer. Vi sætter pris på høje standarder og god kundeservice, og hele teamet uddanner sig konstant til at blive bedre til det, vi laver.
                 </p>
-                <p class="body-text">For at kunne opfylde disse tanker, sørger hele teamet i butikken for løbende videreuddannelse, både gennem arrangementer vi selv arrangerer og gennem konferencer i udlandet, bland andet Association of Professionel Pierceres’s årlige konferance i Las Vegas, USA og BMXnet i Essen, Tyskland.</p>
+                <p class="body-text">Vi startede tilbage i 1998, og på dette tidspunkt er vi et af de bedste studier i Danmark. Vi sætter stor pris på vores kunder og gør vores bedste hver gang. Klar kommunikation, professionel tilgang og sterile omgivelser er vores fokus områder.</p>
+                <p class="body-text">Find al den nødvendige information på vores hjemmeside, men husk at ikke tøve med at kontakte os, hvis du er i tvivl.</p>
             </div>
-            <a href="about_us.html" class="button collection-button" id="button-space">Læs mere</a>
+            <a href="about_us.html" class="button collection-button2" id="button-space">Læs mere</a>
         </div>
 
         <div class="openinghours-container">
@@ -135,10 +137,10 @@
 
             <h2>Galleri</h2>
             <div class="gallery-box">
-                <img src="images/face-piercing1.png" alt="Image of face piercing">
-                <img src="images/ear-piercing.png" alt="Image of ear piercing">
-                <img src="images/lip-piercing.png" alt="Image of lip piercing">
-                <img src="images/intim-piercing.png" alt="Image of intim piercing">
+                <img src="images/people/nosepiercing.jpg" alt="Image of face piercing">
+                <img src="images/people/earpiercing.jpg" alt="Image of ear piercing">
+                <img src="images/people/baby.jpg" alt="Image of lip piercing">
+                <img src="images/people/bodypiercing.jpg" alt="Image of intim piercing">
             </div>
             <a href="not_available.html" class="button collection-button2" id="gallery-button">Se mere</a>
         </div>
@@ -151,7 +153,8 @@
     <!-- FOOTER STYLING -->
     <footer>
         <div class="footerlayout">
-            <h2>Danmarks mest toptunede studie med veluddannet og erfarent personale</h2>
+            <h2>Danmarks mest toptunede studie </h2>
+            <h2>med veluddannet og erfarent personale</h2>
             <div class="footer">
                 <div class="footer-contact">
                     <p>Tlf: <a href="tel:+4533937666">+45 339 37 666</a></p>
@@ -183,6 +186,23 @@
         </div>
     </footer>
     <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "position": "bottom-right",
+      "content": {
+        "message": "Denne side bruger cookies for at sikre at du får den bedst mulige oplevelse på vores side"
+      }
+    });
+</script>
 </body>
 
 </html>
